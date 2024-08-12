@@ -1,4 +1,4 @@
-FROM --platform=linux/x86_64 openjdk:17-jdk-alpine3.14
+FROM openjdk:17-jdk-alpine3.14
 
 # Dành cho Apple Sillicon
 # FROM --platform=linux/x86_64 openjdk:17-jdk-alpine3.14

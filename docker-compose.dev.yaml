@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+
+  db:
+    image: mysql:8
+    restart: always
+    volumes:
+      - ./db.sql:/docker-entrypoint-initdb.d/db.sql:ro
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: java_test
+
+  redis:
+    image: redis:6-alpine
+    restart: always
